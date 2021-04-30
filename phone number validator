@@ -1,0 +1,9 @@
+#write a pprogram that will search for a number that must start with either 1 or 8 or 9 the entire number must be eight integers
+import re
+pattern = r"[189][0-9]{7}$"
+st = input()
+match = re.match(pattern, st)
+if match:
+    print("valid")
+else:
+    print("not valid")
